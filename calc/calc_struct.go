@@ -6,12 +6,8 @@ type calculator struct {
 	MathSign  string
 }
 
-func CreateCalc(num1, num2 float64, mathSign string) calculator {
-	return calculator{
-		NumberOne: num1,
-		NumberTwo: num2,
-		MathSign:  mathSign,
-	}
+func CreateCalc() calculator {
+	return calculator{}
 }
 
 func (c *calculator) Calculate(num1, num2 float64, mathSign string) float64 {

@@ -48,8 +48,8 @@ func main() {
 		break
 	}
 
-	c := calc.CreateCalc(firstNumber, secondNumber, mathSign)
-	result := c.Calculate(c.NumberOne, c.NumberTwo, c.MathSign)
+	c := calc.CreateCalc()
+	result := c.Calculate(firstNumber, secondNumber, mathSign)
 
 	switch mathSign {
 	case add:
